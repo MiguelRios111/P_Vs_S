@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Vs S</title>
+    <style>
+
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body >
+    <div class="container">
+
+        <br>
+    <div class="shadow-lg p-3 mb-5 bg-white rounded" Align="Center">Peliculas VS Series</div>
+
+ <div class="contenido">
+  <div class="subcontenido" Align="Center">
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Peliculas
+        </a>
+      
+        <div id="lista1" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" id="1" href="#">It Vieja</a>
+          <a class="dropdown-item" id="2" href="#">It Nueva</a>
+          <a class="dropdown-item" id="3" href="#">La Razon de estar contiga</a>
+          <a class="dropdown-item" id="4" href="#">American pie el libro del amor </a>
+          <a class="dropdown-item" id="5" href="#">Siempre a tu lado</a>
+          <a class="dropdown-item" id="6" href="#">El Hoyo</a>
+          <a class="dropdown-item" id="7" href="#">La era de hielo 3/4</a>
+          <a class="dropdown-item" id="8" href="#">El conjuro</a>
+          <a class="dropdown-item" id="9" href="#">Chucky</a>
+          <a class="dropdown-item" id="10" href="#">Dos locas en fuga</a>
+          <a class="dropdown-item" id="11" href="#">Seamos como polis</a>
+          <a class="dropdown-item" id="12" href="#">Rapido y Furioso</a>
+          <a class="dropdown-item" id="13" href="#">A dos metros de ti</a>
+          <a class="dropdown-item" id="14" href="#">La mansion de wolfberg</a>
+          <a class="dropdown-item" id="15" href="#">Soy leyenda</a>
+          <a class="dropdown-item" id="16" href="#">Diario de una pasion</a>
+          <a class="dropdown-item" id="17" href="#">La teoria del todo</a>
+          <a class="dropdown-item" id="18" href="#">Como si fuera la primeza vez</a>
+          <a class="dropdown-item" id="19" href="#">Daddy Yankee</a>
+          <a class="dropdown-item" id="20" href="#">Teen beach movie 1/2</a>
+          <a class="dropdown-item" id="21" href="#">Descendientes</a>
+          <a class="dropdown-item" id="22" href="#">Mi papa es un gato</a>
+          <a class="dropdown-item" id="23" href="#">Un viernes de locos</a>
+    
+        </div>
+      </div>
+
+      <br>
+      <button onclick="aleatorio()" type="button" class="btn btn-dark">Mirar</button>
+
+      <br>
+      <br>
+      <h1>Ganador</h1>
+      <br>
+      <label id="label" for="Text"></label>
+
+    </div>
+
+
+      <div class="subcontenido" Align="Center">
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Series 
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" id="31" href="#">Bella calamidades</a>
+          <a class="dropdown-item" id="32" href="#">Pablo escobar</a>
+          <a class="dropdown-item" id="33" href="#">7 pecados capitales</a>
+          <a class="dropdown-item" id="34" href="#">Riverdale</a>
+          <a class="dropdown-item" id="35" href="#">La piloto</a>
+          <a class="dropdown-item" id="36" href="#">Yakusoku no neverland</a>
+          <a class="dropdown-item" id="37" href="#">Another</a>
+          <a class="dropdown-item" id="38" href="#">Jeffrey Epstein</a>
+
+        </div>
+      </div>
+      
+      <br>
+      <button onclick="aleatorio2()" type="button" class="btn btn-dark">Mirar</button>
+
+      <br>
+      <br>
+      <h1>Ganador</h1>
+      <br>
+      <label id="label2"for="Text"></label>
+    </div>
+
+    </div>
+    
+  </div>
+    
+
+<script language="JavaScript">
+
+  function aleatorio(){
+
+    var num= Math.floor((Math.random() * ((23+1)-1))+1);
+
+    document.querySelector('#label').innerText = document.getElementById(num).innerHTML;
+    
+
+
+  }
+  function aleatorio2(){
+    var num= Math.floor((Math.random() * ((38+1)-31))+31);
+    
+document.querySelector('#label2').innerText = document.getElementById(num).innerHTML;
+
+
+
+}
+</script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
